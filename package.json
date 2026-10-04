@@ -1,0 +1,22 @@
+{
+  "name": "@kotonoha/learning-evidence-core",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Narrow Japanese surface evidence with exact UTF-16 spans and unknown gaps",
+  "keywords": ["japanese", "learning", "grammar", "evidence", "typescript"],
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE", "docs/rules.md", "docs/provenance.md", "docs/offsets.md", "docs/limitations.md", "docs/fixture-manifest.md"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "build": "tsc",
+    "check:privacy": "node scripts/privacy-check.mjs",
+    "check:consumer": "node scripts/consumer-check.mjs",
+    "ci": "npm run typecheck && npm test && npm run build && npm run check:privacy && npm run check:consumer"
+  },
+  "devDependencies": { "typescript": "5.9.3" }
+}

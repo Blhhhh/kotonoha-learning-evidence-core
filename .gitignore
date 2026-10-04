@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tgz
+.env*
+.DS_Store
+# Private QA records and temporary license notice are excluded from the future initial commit.
+docs/rights-report.md
+LICENSE-PENDING.md
+private-review/
