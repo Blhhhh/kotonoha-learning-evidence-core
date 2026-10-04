@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "description": "Narrow Japanese surface evidence with exact UTF-16 spans and unknown gaps",
+  "repository": "https://github.com/Blhhhh/kotonoha-learning-evidence-core",
   "keywords": ["japanese", "learning", "grammar", "evidence", "typescript"],
   "license": "Apache-2.0",
   "type": "module",
